@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+
+    <style>
+       body {
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 30px;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+
+        h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+       }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="number"] {
+            width: 80px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .button-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #e53935;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Conference Registration Form</h2>
+    <form>
+        Full Name: <br>
+        <input type="text" name="fullname" placeholder="Enter your full name" required><br>
+        
+        Email Address: <br>
+        <input type="text" name="emailaddress" placeholder="Enter your email address" required><br>
+        
+        Age: <br>
+        <input type="number" name="age" min="18" name="age" max="99" value="18" required><br><br>
+        
+        Gender: <br><br>
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br><br>
+    
+        Country of Residence: <br>
+        <select name="Malaysia"><br>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Australia">Australia</option>
+        <option value="China">China</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Norway">Norway</option>
+        <option value="Spain">Spain</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Thailand">Thailand</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+        </select>
+
+        <br><br>Areas of Interest: <br><br>
+        <input type="checkbox" name="subject" value="Software Development">Software Development<br>
+        <input type="checkbox" name="subject" value="Data Science">Data Science<br>
+        <input type="checkbox" name="subject" value="Cybersecurity">Cybersecurity<br>
+        <input type="checkbox" name="subject" value="Artificial Intelligence">Artificial Intelligence<br><br>
+
+        Experience Level: <br><br>
+        <input type="radio" name="Experience" value="beginner">Beginner<br>
+        <input type="radio" name="Experience" value="intermediate">Intermediate<br>
+        <input type="radio" name="Experience" value="advanced">Advanced<br><br>
+
+        Comments or Questions: <br>
+        <textarea id="commentsorquestions" name="commentsorquestions" rows="4" cols="50">Any comments or questions?</textarea> 
+        <br>
+        
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    
+    </form>
+</body>
+</html>
+
+
+
